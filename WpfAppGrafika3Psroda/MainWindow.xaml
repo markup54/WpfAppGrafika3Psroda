@@ -6,9 +6,20 @@
         xmlns:local="clr-namespace:WpfAppGrafika3Psroda"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <UniformGrid Rows="1">
-        <Button Margin="30">Nazot</Button>
-        <Image Source="grafika/rys1.jpg"/>
-        <Button Margin="30">Dalej</Button>
-    </UniformGrid>
+    <Grid>
+        <TabControl>
+            <TabItem Header="Przyciski karuzela">
+                <UniformGrid Rows="1">
+                    <Button Margin="30" Click="Button_Click">Nazot</Button>
+                    <Image Source="grafika/rys1.jpg"
+               x:Name="obraz"/>
+                    <Button Margin="30" Click="Button_Click_1">Dalej</Button>
+                </UniformGrid>
+            </TabItem>
+            <TabItem Header="Radio">
+                
+            </TabItem>
+        </TabControl>
+    </Grid>
+   
 </Window>
