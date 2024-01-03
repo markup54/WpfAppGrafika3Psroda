@@ -68,7 +68,8 @@ namespace WpfAppGrafika3Psroda
 
         private void combo_box_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            int ktory = combo_box.SelectedIndex;
+            obrazek3.Source = Images[ktory];
         }
     }
 }
