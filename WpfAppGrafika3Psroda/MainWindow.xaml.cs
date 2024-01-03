@@ -60,5 +60,15 @@ namespace WpfAppGrafika3Psroda
                 Aktualny = 0;
             obraz.Source = Images[Aktualny];
         }
+
+        private void rys1_Checked(object sender, RoutedEventArgs e)
+        {
+            obrazek2.Source = new BitmapImage(new Uri("grafika/rys1.jpg",UriKind.Relative));
+        }
+
+        private void combo_box_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

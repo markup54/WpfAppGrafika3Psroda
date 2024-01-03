@@ -17,7 +17,44 @@
                 </UniformGrid>
             </TabItem>
             <TabItem Header="Radio">
-                
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <RadioButton 
+                            GroupName="obrazki_radio"
+                            x:Name="rys1"
+                            Checked="rys1_Checked">
+                            Zdjęcie 1
+                        </RadioButton>
+                        <RadioButton 
+                            GroupName="obrazki_radio"
+                            x:Name="rys2">
+                            Zdjęcie 2
+                        </RadioButton>
+                        <RadioButton 
+                            GroupName="obrazki_radio"
+                            x:Name="rys3">
+                            Zdjęcie 3
+                        </RadioButton>
+                    </StackPanel>
+                    <Image 
+                        Source="../../../grafika/rys4.jpg"
+                        x:Name="obrazek2"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="combobox">
+                <StackPanel>
+                      <ComboBox x:Name="combo_box" 
+                              SelectionChanged="combo_box_SelectionChanged" >
+                        <ComboBoxItem>1</ComboBoxItem>
+                        <ComboBoxItem>2</ComboBoxItem>
+                        <ComboBoxItem>3</ComboBoxItem>
+                        <ComboBoxItem>4</ComboBoxItem>
+                    </ComboBox>
+                    <Image
+                        x:Name="obrazek3"
+                        Source="grafika/rys8.jpg"/>
+                  
+                </StackPanel>
             </TabItem>
         </TabControl>
     </Grid>
